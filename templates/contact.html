@@ -1,0 +1,86 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
+<body class="sub_page">
+  <div class="body_bg layout_padding">
+    <!-- contact section -->
+
+    <section class="contact_section">
+      <div class="container">
+        <div class="heading_container">
+          <h2>Aloqaga chiqamiz!</h2>
+        </div>
+      </div>
+      <div class="container contact_bg layout_padding2-top">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact_form">
+              {% csrf_token %}
+              <form action="" method="post">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input
+                  type="text"
+                  placeholder="Message"
+                  class="message_input"
+                />
+                <button>Jo'natish</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="{% static 'images/contact-img.jpg' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end contact section -->
+  </div>
+  <!-- info section -->
+
+  <section class="info_section layout_padding">
+    <div class="footer_contact">
+      <div class="heading_container">
+        <h2>Biz bilan bog'lanish</h2>
+      </div>
+      <div class="box">
+        <a href="" class="img-box">
+          <img src="{% static 'images/location.png' %}" alt="" class="img-1" />
+          <img
+            src="{% static 'images/location-o.png' %}"
+            alt=""
+            class="img-2"
+          />
+        </a>
+        <a href="" class="img-box">
+          <img src="{% static 'images/call.png' %}" alt="" class="img-1" />
+          <img src="{% static 'images/call-o.png' %}" alt="" class="img-2" />
+        </a>
+        <a href="" class="img-box">
+          <img src="{% static 'images/envelope.png' %}" alt="" class="img-1" />
+          <img
+            src="{% static 'images/envelope-o.png' %}"
+            alt=""
+            class="img-2"
+          />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section"></section>
+  <!-- footer section -->
+
+  <script
+    type="text/javascript"
+    src="{% static 'js/jquery-3.4.1.min.js' %}"
+  ></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+
+{% endblock %}

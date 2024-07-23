@@ -1,0 +1,83 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
+<body class="sub_page">
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>Biz haqimizda</h2>
+            </div>
+
+            <p>
+              Men kopirayter, marketolog va SEO optimallashtiruvchisiman. Men
+              veb-resurs yoki kampaniya uchun reklama matnlarining qiymatini
+              kilogrammda emas, balki murakkablik va samaradorlik darajasida
+              baholayman. Men mahsulot/xizmatning oxirgi iste'molchilari uchun
+              yozaman. Kopirayterning asosiy xatosi shundaki, matn "mijoz uchun"
+              yozilgan. Ya'ni, "xo'jayinga yoqadigan" tarzda. Men taxminlarga
+              emas, raqamlar va statistikaga ishonaman. Bilaman, matnlarni
+              sotishga qo'yilgan 100% investitsiyalar faqat yoqtirishlar va
+              sharhlar emas, balki to'lashi va pul olib kelishi kerak.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png' %}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding">
+    <div class="footer_contact">
+      <div class="heading_container">
+        <h2>Biz bilan bog'lanish</h2>
+      </div>
+      <div class="box">
+        <a href="" class="img-box">
+          <img src="{% static 'images/location.png' %}" alt="" class="img-1" />
+          <img
+            src="{% static 'images/location-o.png' %}"
+            alt=""
+            class="img-2"
+          />
+        </a>
+        <a href="" class="img-box">
+          <img src="{% static 'images/call.png' %}" alt="" class="img-1" />
+          <img src="{% static 'images/call-o.png' %}" alt="" class="img-2" />
+        </a>
+        <a href="" class="img-box">
+          <img src="{% static 'images/envelope.png' %}" alt="" class="img-1" />
+          <img
+            src="{% static 'images/envelope-o.png' %}"
+            alt=""
+            class="img-2"
+          />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section"></section>
+  <!-- footer section -->
+
+  <script
+    type="text/javascript"
+    src="{% static 'js/jquery-3.4.1.min.js' %}"
+  ></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+
+{% endblock %}
