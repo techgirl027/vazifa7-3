@@ -1,12 +1,17 @@
 from django.shortcuts import render
-from .models import Services, Contact, Comments
-from app import models
+from app.models import *
 
 # Create your views here.
 
 
 def home_page(request):
-    return render(request, "index.html")
+    comments = Comments.objects.all()
+    services = Services.objects.all()
+    context = {
+        "comments": comments,
+        "services": services,
+    }
+    return render(request, "index.html", context)
 
 
 def about(request):

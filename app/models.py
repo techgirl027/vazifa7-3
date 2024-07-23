@@ -20,7 +20,7 @@ class Contact(models.Model):
         return self.name
 
 
-class Comments:
+class Comments(models.Model):
     name = models.CharField(max_length=255)
     img = models.ImageField()
     comment = models.TextField()
